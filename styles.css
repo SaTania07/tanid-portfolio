@@ -134,3 +134,11 @@ footer .wrap{display:flex;justify-content:space-between;padding-top:28px;padding
   .facts div{grid-template-columns:110px 1fr}
   footer .wrap{flex-direction:column;gap:6px}
 }
+
+/* Real artwork */
+.art{display:block;width:100%;height:auto;background:#44404a}
+.item .art{aspect-ratio:4/3;object-fit:cover;transition:opacity .3s}
+.item:hover .art{opacity:.88}
+.gallery .art{grid-column:span 6;cursor:zoom-in}
+.lb .art{width:auto;max-width:92vw;max-height:88vh;aspect-ratio:auto;object-fit:contain}
+@media (max-width:640px){.gallery .art{grid-column:span 1}}
