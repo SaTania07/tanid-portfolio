@@ -266,9 +266,9 @@ body{overflow-x:clip}
 .banner-wrap .pj-intro span{display:block;color:#efe6fb;font-weight:500}
 @media (max-width:640px){
   .banner-wrap .pj-intro{position:static;transform:none;text-align:left;color:var(--ink-2);font-size:16px;margin-top:16px;white-space:normal;text-shadow:none}
-  .banner-wrap .pj-intro strong{color:var(--ink);display:inline;font-size:1em}
+  .banner-wrap .pj-intro strong{color:var(--ink);display:block;font-size:1.1em;margin-bottom:2px}
   .banner-wrap .pj-intro span{display:inline;color:var(--ink-2)}
-  .banner-wrap .pj-intro span::before{content:" · "}
+  .banner-wrap .pj-intro span::before{content:" "}
 }
 
 /* ===== Dark purple theme ===== */
