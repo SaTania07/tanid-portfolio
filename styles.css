@@ -235,3 +235,10 @@ footer .wrap{display:flex;justify-content:space-between;font-size:13px;color:var
   footer .wrap{flex-direction:column;gap:6px}
 }
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.card .cat{display:block;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.card.wide{grid-column:span 2}
+.card.wide .cover{aspect-ratio:auto;flex:1;min-height:300px}
+.card.wide .trio{gap:14px;padding:22px}
+.browse{margin-top:32px;font-size:15px;color:var(--muted);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+@media (max-width:760px){.card.wide{grid-column:auto}.card.wide .cover{aspect-ratio:4/3;min-height:0}}
+body{overflow-x:clip}
