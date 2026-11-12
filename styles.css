@@ -255,3 +255,18 @@ body{overflow-x:clip}
   .row3{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;margin:0 -16px;padding:0 16px 8px}
   .cell{flex:0 0 82%;scroll-snap-align:center}
 }
+.pj-hero .banner{width:100%;height:auto;border-radius:32px;background:#3a2266}
+.pj-intro{margin-top:24px;font-size:18px;color:var(--ink-2)}
+.pj-intro strong{font-family:var(--display);font-weight:700;color:var(--ink)}
+@media (max-width:640px){.pj-hero .banner{border-radius:18px}.pj-intro{font-size:16px;margin-top:16px}}
+/* Hero line placed under the logo, over the banner */
+.banner-wrap{position:relative;container-type:inline-size}
+.banner-wrap .pj-intro{position:absolute;left:25.8%;top:55%;transform:translateX(-50%);margin:0;text-align:center;color:#fff;font-size:1.55cqw;line-height:1.35;white-space:nowrap;text-shadow:0 2px 12px rgba(30,12,60,.55)}
+.banner-wrap .pj-intro strong{display:block;color:#ffd35c;font-size:1.25em;letter-spacing:.02em}
+.banner-wrap .pj-intro span{display:block;color:#efe6fb;font-weight:500}
+@media (max-width:640px){
+  .banner-wrap .pj-intro{position:static;transform:none;text-align:left;color:var(--ink-2);font-size:16px;margin-top:16px;white-space:normal;text-shadow:none}
+  .banner-wrap .pj-intro strong{color:var(--ink);display:inline;font-size:1em}
+  .banner-wrap .pj-intro span{display:inline;color:var(--ink-2)}
+  .banner-wrap .pj-intro span::before{content:" · "}
+}
