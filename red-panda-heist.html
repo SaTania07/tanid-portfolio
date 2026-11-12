@@ -7,37 +7,36 @@
 <meta name="description" content="A personal stealth game concept: a sneaky red panda travels to the emperor's castle to steal his chopsticks.">
 <meta property="og:title" content="Red Panda Heist — Tanya Dvorkin">
 <meta property="og:description" content="A personal stealth game concept: a sneaky red panda travels to the emperor's castle to steal his chopsticks.">
+<meta name="theme-color" content="#faf6f1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23111214'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia' font-size='17' fill='%23e8b86b'%3ETD%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232a1a45'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Arial' font-weight='700' font-size='15' fill='%23e3a72f'%3ETD%3C/text%3E%3C/svg%3E">
 </head>
 <body>
-<nav class="nav"><div class="nav-inner">
+<header class="nav"><div class="nav-inner">
   <a href="index.html" class="logo">Tanya Dvorkin</a>
-  <button class="burger" aria-label="Menu">MENU</button>
-  <div class="links">
-    <a href="index.html#work" class="active">Work</a>
+  <button class="burger" aria-label="Open menu" aria-expanded="false">MENU</button>
+  <nav class="links" aria-label="Main">
+    <a href="index.html#work" class="active" aria-current="page">Work</a>
     <a href="index.html#about">About</a>
     <a href="index.html#contact">Contact</a>
-  </div>
-</div></nav>
+  </nav>
+</div></header>
 
 <main class="wrap">
 <header class="p-head">
-  <a href="index.html#work" class="back">← All work</a>
-  <h1>Red Panda Heist</h1>
-  <div class="p-intro"><p>A personal stealth game concept: a sneaky red panda travels to the emperor's castle to steal his chopsticks.</p><dl class="meta"><div><dt>Type</dt><dd>Personal game concept</dd></div><div><dt>Genre</dt><dd>Stealth, casual</dd></div><div><dt>Tools</dt><dd>Photoshop, Illustrator</dd></div></dl></div>
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html#work">Selected Work</a><span aria-hidden="true">/</span><span aria-current="page">Red Panda Heist</span></nav>
+  <h1 class="reveal">Red Panda Heist</h1>
+  <p class="lead reveal">A personal stealth game concept: a sneaky red panda travels to the emperor's castle to steal his chopsticks.</p>
+  <div class="meta"><div><small>Type</small><span>Personal game concept</span></div><div><small>Genre</small><span>Stealth, casual</span></div><div><small>Tools</small><span>Photoshop, Illustrator</span></div></div>
 </header>
 <div class="gallery"><div class="ph g-wide reveal"><span class="num">Slot 01</span><span class="lbl">Red panda — hero art</span><span class="size">2:1 · 2400×1200</span></div><div class="ph g-half reveal"><span class="num">Slot 02</span><span class="lbl">Character sheet & poses</span><span class="size">4:3 · 1600×1200</span></div><div class="ph g-half reveal"><span class="num">Slot 03</span><span class="lbl">The emperor's castle</span><span class="size">4:3 · 1600×1200</span></div><div class="ph g-third reveal"><span class="num">Slot 04</span><span class="lbl">Guards & obstacles</span><span class="size">3:4 · 1200×1600</span></div><div class="ph g-third reveal"><span class="num">Slot 05</span><span class="lbl">The golden chopsticks</span><span class="size">3:4 · 1200×1600</span></div><div class="ph g-third reveal"><span class="num">Slot 06</span><span class="lbl">Sketches & exploration</span><span class="size">3:4 · 1200×1600</span></div></div>
-<div class="next">
-  <a href="index.html#work" class="ul">All work</a>
-  <div style="text-align:right"><small>Next project</small><a href="monetization.html" class="big">Monetization Art →</a></div>
-</div>
+<div class="next" style="margin-top:96px"><a href="index.html#work" class="link"><span class="arr">←</span> Selected Work</a><a href="monetization.html" class="link">Monetization Art <span class="arr">→</span></a></div>
 </main>
-<div class="lb"><button class="lb-close" aria-label="Close">CLOSE</button><div class="lb-stage"></div></div>
-<footer><div class="wrap"><span>© <span class="year"></span> Tanya Dvorkin</span><span>Israel</span></div></footer>
+<footer><div class="wrap"><span>© <span class="year">2026</span> Tanya Dvorkin</span><span>Monetization Illustrator &amp; Marketing Designer · Israel</span></div></footer>
+<div class="lb" role="dialog" aria-modal="true" aria-label="Full-size artwork"><button class="lb-close" aria-label="Close">CLOSE</button><img alt=""></div>
 <script src="script.js"></script>
 </body>
 </html>
