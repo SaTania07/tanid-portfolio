@@ -242,3 +242,16 @@ footer .wrap{display:flex;justify-content:space-between;font-size:13px;color:var
 .browse{margin-top:32px;font-size:15px;color:var(--muted);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 @media (max-width:760px){.card.wide{grid-column:auto}.card.wide .cover{aspect-ratio:4/3;min-height:0}}
 body{overflow-x:clip}
+/* Pack Journey v2: art-first */
+.cs-hero .sub{font-family:var(--display);font-weight:600;font-size:clamp(22px,2.4vw,30px);color:#e3a72f;margin-top:-6px}
+.cs-hero h1{margin:0 0 18px}
+.h3{font-family:var(--display);font-size:clamp(26px,2.6vw,34px);font-weight:700;margin-bottom:28px}
+.trio-sec{padding:72px 0 0}
+.trio-sec + .next,.trio-sec:last-of-type{padding-bottom:72px}
+.row3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.cell figcaption{font-size:13px;color:var(--muted);margin-top:12px}
+@media (max-width:640px){
+  .trio-sec{padding-top:56px}
+  .row3{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;margin:0 -16px;padding:0 16px 8px}
+  .cell{flex:0 0 82%;scroll-snap-align:center}
+}
