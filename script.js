@@ -58,7 +58,7 @@
     var close = function(){ lb.classList.remove('open'); img.removeAttribute('src'); if (last) last.focus(); };
     document.querySelectorAll('[data-full]').forEach(function(b){
       b.addEventListener('click', function(){
-        last = b; img.src = b.getAttribute('data-full'); img.alt = b.getAttribute('data-alt') || '';
+        last = b; img.className = b.getAttribute('data-lb') || ''; img.src = b.getAttribute('data-full'); img.alt = b.getAttribute('data-alt') || '';
         lb.classList.add('open'); closeBtn.focus();
       });
     });
