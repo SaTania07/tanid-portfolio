@@ -364,3 +364,14 @@ body{background:var(--bg)}
 @media (max-width:560px){.so-grid{grid-template-columns:1fr;gap:28px;max-width:420px;padding-bottom:72px}
   .so-tile:nth-child(n){--y:0px}}
 @media (prefers-reduced-motion:reduce){.so-tile img{transition:none}.so-tile .zoom:hover img{transform:none}}
+/* Home: 2x2 Selected Work, category pills, Special Offers cover */
+#work .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:760px){#work .cards{grid-template-columns:1fr}}
+.cat-pills{display:flex;gap:10px;flex-wrap:wrap}
+.cat-pills a{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-weight:600;font-size:15px;transition:background .2s,border-color .2s,color .2s}
+.cat-pills a:hover{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.cat-pills a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.card .cover .so-cover{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:4%;background:radial-gradient(ellipse at 50% 60%,#3d2763 0,#241640 78%);transition:transform .6s}
+.card .cover .so-cover img{width:26%;height:auto;max-height:84%;object-fit:contain;border-radius:10px;box-shadow:0 14px 30px rgba(8,2,20,.5)}
+.card .cover .so-cover img:nth-child(2){width:29%;max-height:92%}
+.card:hover .cover .so-cover{transform:scale(1.03)}
