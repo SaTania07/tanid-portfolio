@@ -375,3 +375,8 @@ body{background:var(--bg)}
 .card .cover .so-cover img{width:26%;height:auto;max-height:84%;object-fit:contain;border-radius:10px;box-shadow:0 14px 30px rgba(8,2,20,.5)}
 .card .cover .so-cover img:nth-child(2){width:29%;max-height:92%}
 .card:hover .cover .so-cover{transform:scale(1.03)}
+/* Special Offers: animated tile */
+.so-tile video{display:block;width:100%;height:auto;aspect-ratio:720/1272;object-fit:cover;border-radius:22px;background:#0b0f18;
+  box-shadow:0 1px 0 rgba(199,166,255,.12) inset,0 22px 50px rgba(8,2,20,.5);transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s}
+.so-tile .zoom:hover video,.so-tile .zoom:focus-visible video{transform:translateY(-6px);box-shadow:0 0 0 1px rgba(199,166,255,.35),0 32px 64px rgba(8,2,20,.6)}
+@media (prefers-reduced-motion:reduce){.so-tile video{transition:none}.so-tile .zoom:hover video{transform:none}}
